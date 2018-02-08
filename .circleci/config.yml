@@ -23,11 +23,11 @@ image_config: &image_config
 
   JAVA: false
 
-  MYSQL_CLIENT: true
+  MYSQL_CLIENT: false
 
   POSTGRES_CLIENT: false
 
-  BROWSERS: true
+  BROWSERS: false
 
 version: 2
 jobs:
