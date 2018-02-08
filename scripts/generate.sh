@@ -88,9 +88,10 @@ echo "RUN apt-get update && apt-get -y install lsb-release unzip"
 
 # Pinhole custom
 echo "RUN apt-get update && apt-get -y install libwebkit-dev libgstreamer0.10-dev jpegoptim optipng"
+echo "RUN apt-get update && apt-get -y install libodbc1 unixodbc"
 echo "RUN apt-get remove sphinxsearch && apt-get purge sphinxsearch"
 echo "RUN wget http://sphinxsearch.com/files/sphinxsearch_2.2.10-release-0ubuntu12~trusty_amd64.deb"
-echo "RUN dpkg -i sphinx sphinxsearch_2.2.10-release-0ubuntu12~trusty_amd64.deb"
+echo "RUN dpkg -i sphinxsearch_2.2.10-release-0ubuntu12~trusty_amd64.deb"
 
 
 if [ $BROWSERS = "true" ] ; then
