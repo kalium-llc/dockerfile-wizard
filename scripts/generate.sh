@@ -87,7 +87,7 @@ echo "RUN perl -MCPAN -e 'install XML::Generator'"
 echo "RUN apt-get update && apt-get -y install lsb-release unzip"
 
 # Pinhole custom
-echo "RUN sudo apt-get update && sudo apt-get install -y qt5-default qttools5-dev-tools libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x xvfb"
+echo "RUN sudo apt-get update && sudo apt-get install -y qt5-default qttools5-dev-tools libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x"
 echo "RUN sudo apt-get update && sudo apt-get install -y memcached jpegoptim optipng dbus"
 echo "RUN apt-get remove sphinxsearch && apt-get purge sphinxsearch"
 echo "RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-v0.6.1.tar.gz && rm dockerize-linux-amd64-v0.6.1.tar.gz"
