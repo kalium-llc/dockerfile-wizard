@@ -1,2 +1,5 @@
 .DS_Store
 config.yml.template
+
+# Ignore RubyMine files
+.idea

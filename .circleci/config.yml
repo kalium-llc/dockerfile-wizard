@@ -6,7 +6,7 @@ image_config: &image_config
 
   IMAGE_NAME: ruby
 
-  IMAGE_TAG: 2.3.1
+  IMAGE_TAG: 2.3.8
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -15,7 +15,7 @@ image_config: &image_config
 
   LINUX_VERSION: UBUNTU_TRUSTY
 
-  RUBY_VERSION_NUM: 2.3.1
+  RUBY_VERSION_NUM: 2.3.8
 
   # # NODE_VERSION_NUM: # pick a version from https://nodejs.org/dist
 
@@ -52,7 +52,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/ruby:2.3.1
+      - image: $DOCKER_USERNAME/ruby:2.3.8
         environment:
           <<: *image_config
 
